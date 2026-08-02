@@ -11,6 +11,7 @@ race_game
 ```
 
 ### 함수 기능들
+```
 - 1. session_man.c
         ├── void enter(i,fd) -> m_accept()에 넘겨주는 콜백 함수
         ├── void init_session(n,fin,maxfd) -> select 감시 위해 mask 초기화해 비트마스크 준비후 초기 데이터 전원에게 보냄
@@ -20,3 +21,4 @@ race_game
         ├── void end() ->
 - 2. server.c
         ├── main(int argc,char *argv[])
+```
