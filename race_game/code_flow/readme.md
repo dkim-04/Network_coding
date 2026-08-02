@@ -23,8 +23,9 @@ flowchart LR
 ## 3. Client-Server 통신 과정
 ```mermaid
 sequenceDiagram
-    participant Client
     participant Server
+    participant Client
+
 
     Server->>Client: write(sock,msg)
     Note left of Server: session_man.c의 enter()를 m_accept에서 사용하여 hostname입력하도록 메시지 전송
