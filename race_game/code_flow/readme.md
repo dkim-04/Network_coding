@@ -27,7 +27,9 @@ sequenceDiagram
     participant Client
 
 
+    Note over Server: session_man.c의 enter()에서<br/>hostname 입력 요청 메시지 생성
     Server->>Client: write(sock,msg)
-    Note left of Server: session_man.c의 enter()를 m_accept에서 사용하여 <br/>hostname입력하도록 메시지 전송
+
+    Note over Client: hostname 입력 요청 메시지 수신
 ```
 
