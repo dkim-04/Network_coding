@@ -12,7 +12,7 @@ flowchart LR
 ```
 
 ## 2. client 동작 과정
-```
+```mermaid
 flowchart LR
     main --> input_hostname
     input_hostname --> setup_client
