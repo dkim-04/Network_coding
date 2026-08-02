@@ -26,15 +26,11 @@ sequenceDiagram
     participant Server
     participant Client
 
-    Note right of Server: m_accept()가 enter()를 호출
+    Note over Server: m_accept()가 enter()를 호출
 
     Server->>Client: write(sock, msg)<br/>hostname 입력 요청 메시지 전송
 
     Client->>Client: read(sock, buf)<br/>hostname 입력 요청 메시지 수신
-
-    Client->>Client: fgets(buf)<br/>사용자로부터 hostname 입력
-
-    Client->>Client: buf[strcspn(buf,"\n")] = '\0'<br/>개행 문자 제거
 
     Client->>Server: write(sock, buf)<br/>hostname 전송
 
