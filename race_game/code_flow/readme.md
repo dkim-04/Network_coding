@@ -29,8 +29,8 @@ sequenceDiagram
 
     Note over Server: m_accept에서 enter()로 인해<br/>hostname 입력 요청 메시지 전송
     Server->>Client: write(sock,msg)
-
     Note over Client: hostname 입력 요청 메시지 수신
+
     Client->>Client: read(sock,buf)
     Note over Client: 이름 입력 후 '\n' -> '\0'<br/>전환하여 이름 전송
 ```
