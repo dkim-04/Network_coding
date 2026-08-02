@@ -32,8 +32,9 @@ sequenceDiagram
     Note over Client: hostname 입력 요청 메시지 수신
 
     Client->>Client: read(sock,buf)
-    Note over Client: 이름 입력 후 '\n' -> '\0'<br/>전환하여 이름 전송
 
+    Note over Client: 이름 입력 후 '\n' -> '\0'<br/>전환하여 이름 전송
     Client->>Server: write(sock,buf)
+    
 ```
 
