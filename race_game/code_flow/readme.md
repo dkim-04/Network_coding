@@ -36,6 +36,7 @@ sequenceDiagram
 
     Server->>Server: read(sock, buf)<br/>클라이언트가 보낸 hostname 수신
 
-    Note right of Server: 참가자 이름 저장
+    
+    
 ```
 
