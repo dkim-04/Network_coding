@@ -35,6 +35,9 @@ sequenceDiagram
 
     Note over Client: 이름 입력 후 '\n' -> '\0'<br/>전환하여 이름 전송
     Client->>Server: write(sock,buf)
+
+    Note over Server: 각 플레이어 이름 읽어오기
+    Server->>Server: read(sock,buf)
     
 ```
 
