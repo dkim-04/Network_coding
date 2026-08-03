@@ -4,3 +4,4 @@
 ## 구조
   1. 5단원 mini conference(미니 채팅) -tcp
   2. 6단원 car_race(차량 경기) -tcp
+  3. 7단원 conference(udp) -udp
