@@ -7,7 +7,7 @@
   - server에 이 내용 send -> server가 이름 보고 연결해줌  
 
 ## 코드 문제점
-- warning 
+* warning 
 <img width="468" height="90" alt="image" src="https://github.com/user-attachments/assets/054eec9e-ddca-4886-ab9d-3e9462b72baa" />
 
 - 오류 원인 = 정의한 struck sockaddr_in은 ipv4 전용 구조체이고, bind은 모든 구조체를 받을 수 있으므로 ipv4 구조체로 받을 수 있도록 &me 캐스팅 할  (struct sockaddr *)  붙여줘야 함
